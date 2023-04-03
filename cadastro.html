@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadstyle.css">
+</head>
+<body>
+    <div class="container">
+      <div class="card">
+        <h1 div class="cadastrar">Cadastro</h1>
+
+        <div id="msgError"></div>
+        <div id="msgSuccess"></div>
+
+        <div class="label-float">
+          Nome <input type="text" id="nome" placeholder="Escreva seu nome" required />
+          <label id="labelNome" for="nome"></label>
+        </div>
+
+        <div class="label-float">
+          Email <input type="text" id="usuario" placeholder="Endereço de Email" required />
+          <label id="labelUsuario" for="usuario"></label>
+        </div>
+
+        <div class="label-float">
+          Senha <input type="password" id="senha" placeholder="Digite sua senha" required />
+          <label id="labelSenha" for="senha"></label>
+          <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+
+        <div class="label-float">
+          Confirmar Senha <input type="password" id="confirmSenha" placeholder="Confirme sua senha" required />
+          <label id="labelConfirmSenha" for="confirmSenha"
+            ></label
+          >
+          <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+
+        <div class="justify-center">
+          <button onclick="cadastrar()">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+
+</body>
+<script src="cadastro.js"></script>
+</html>

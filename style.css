@@ -1,0 +1,202 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+span{
+    margin: 10px;
+ }
+
+ button {
+    font-family: 'Montserrat';
+	background: #000000;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}
+
+button:hover {
+	background: #313131;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}
+
+p, label{
+    font-family: 'Roboto';
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+
+}
+
+.nav h1{
+    margin-left: 15px;
+    font-family: 'Lobster';
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+}
+
+.navlink{
+    margin-left: 75%;
+}
+
+.navlink a{
+    color: rgb(255, 255, 255);
+    font-family: inherit;
+    font-style: normal;
+    text-decoration: none;
+}
+.navlink a:hover{
+    color: rgb(236, 235, 235);
+    font-family: inherit;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.banner{
+    position: relative;
+    background-image: url(bottles-water-bottle-water-reflection-sky-snow-827053-wallhere.com.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+main{
+    background-color: #d4d4d4;
+}
+
+#produtos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #c2c2c2;
+    padding: 10px;
+    flex-wrap:wrap
+}
+
+.produtosingle{
+    background-color: rgba(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+    .produto-single {
+            width: 100%;
+            margin-right: 0;
+      }
+}
+
+#produtos, a{
+    color: #000000;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#produtos, a:hover{
+    color: #444444;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#basket{
+    width: 500px;
+    height: 500px;
+}
+
+.basketsingle img{
+    margin-left: 25%;
+    
+}
+
+.basketinf, .basketnm, .basketbtn, .buybtn{
+    display: flex;
+    justify-content: center; 
+}
+
+#paym{
+    width: 500px;
+    height: 500px;
+}
+
+footer{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+
+}
+
+.info{
+    display: inline-flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    
+}
+.info h1{
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Roboto';
+}
+
+.info p{
+    margin-left: 10px;
+    font-family: 'Roboto';
+}
+.paycard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #ffffff;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat';
+    padding: 30px 20px;
+    margin-top: 15vh;
+}
+
+.paycard, input {
+    padding: 15px;
+    padding-right: 100px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+.paycard, input:focus {
+    border-bottom: 2px solid grey;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.paycard, label, input {
+    display: block;
+    text-align: left;
+}
+
+form{
+    display: inline-flex;
+}
